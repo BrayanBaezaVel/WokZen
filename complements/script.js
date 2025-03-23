@@ -26,7 +26,7 @@ products.forEach(product => {
 });
 
 // FORMS REGISTER
-    document.getElementById('register' ).addEventListener('submit',function(event){
+    document.getElementById('register' ).addEventListener('submit',async function(event){
         event.preventDefault();
 
         let userName = document.getElementById('nameReg').value.trim();
@@ -37,9 +37,32 @@ products.forEach(product => {
             alert ('Please Fill in all fields')
             return;
         }
+        let userData ={
+            name: userName,
+            emai : userEmail,
+            password : userPass,
+        };
 
-        alert('Registered Sucessfully');
-        this.reset();
-        console.log("Exitoso");
-        
+        try {
+            let response = await fetch("https://workzen.com/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(userData),
+            });
+            let data = await response.json();
+            console.log("Response From Api",data);
+            if(response.ok){
+                alert("Registered Succcesfully");
+                this.reset
+            }else{
+                alert ("Error registering, try again Sending ")
+            }
+            
+            
+        } catch (error) {
+            console.error("Error",error);
+            alert ("There was a problem with the registration")            
+        }
     });
