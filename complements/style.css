@@ -1,0 +1,119 @@
+   * {
+        margin: 0;
+        padding: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+    body {
+        width: 100%;
+        background-color: #9b1b30;
+    }
+    .navbar-brand{
+        font-size: 30px;
+    }
+    .navbar-nav {
+        font-size: 20px;
+    }
+    .row h2{
+        padding: 5x;
+    }
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        width: 800px;
+        height: 400px;
+    }
+
+    .card{
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        align-items: center;
+        border-color: #f1c40f;
+        background-color: #9b1b30;
+    }
+    .card img{
+        width: 300px;
+        height: 300px;
+    }
+    .card-body{
+        color: #f1c40f;
+    }
+    .card-body h5{
+        font-weight: bold;
+    }
+    .card-body p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .card-body a{
+        font-weight: 800;
+        font-size: 25px;
+    }
+
+
+.mb-3{
+    text-align: left;
+}
+
+    .container .mt-6 {
+        margin-top: 30px;
+    }
+
+    .col-md-4 {
+        color: #f1c40f;
+        background-color: #9b1b30;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px;
+        color: #f1c40f;
+    }
+
+    .btn-primary {
+        --bs-btn-color: #f1c40;
+        font-weight: bold;
+        background-color: #9b1b30;
+        border: #9b1b30;
+    }
+
+    .btn-primary:hover {
+        --bs-btn-color: #f1c40;
+        background-color: #9b1b30;
+        border: #9b1b30;
+    }
+
+    footer {
+        padding: 50px;
+        text-align: center;
+        position: relative;
+    }
+
+    footer strong {
+        color: #f1c40f;
+    }
+
+    footer address a {
+        color: #f1c40f;
+        text-decoration: none;
+    }
+
+    .container .row {
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+        color: #f1c40f;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container .row-3 button{
+        font-size: 30px;
+    }
+    .container h2{
+        font-weight: bold;
+    }
